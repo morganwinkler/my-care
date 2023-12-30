@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2023-12-30
+  end_date: 2023-12-30
+  hospital: MyString
+  reason: MyString
+  user_id: 1
+
+two:
+  start_date: 2023-12-30
+  end_date: 2023-12-30
+  hospital: MyString
+  reason: MyString
+  user_id: 1
