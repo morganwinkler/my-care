@@ -4,3 +4,4 @@ json.end_date visit.end_date
 json.hospital visit.hospital
 json.reason visit.reason
 json.user_id visit.user_id
+json.doctors visit.doctors

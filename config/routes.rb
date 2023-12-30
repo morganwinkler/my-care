@@ -9,4 +9,11 @@ Rails.application.routes.draw do
   post "/visits" => "visits#create"
   patch "/visits/:id" => "visits#update"
   delete "/visits/:id" => "visits#destroy"
+
+  #doctor routes
+  get "/doctors" => "doctors#index"
+  get "/doctors/:id" => "doctors#show"
+  post "/doctors" => "doctors#create"
+  patch "/doctors/:id" => "doctors#update"
+  delete "/doctors/:id" => "doctors#destroy"
 end
