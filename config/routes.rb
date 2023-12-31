@@ -30,4 +30,11 @@ Rails.application.routes.draw do
   post "/medications" => "medications#create"
   patch "/medications/:id" => "medications#update"
   delete "/medications/:id" => "medications#destroy"
+
+  #procedure routes
+  get "/procedures" => "procedures#index"
+  get "/procedures/:id" => "procedures#show"
+  post "/procedures" => "procedures#create"
+  patch "/procedures/:id" => "procedures#update"
+  delete "/procedures/:id" => "procedures#destroy"
 end

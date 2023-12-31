@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :doctors, through: :visits
   has_many :nurses, through: :visits
   has_many :medications, through: :visits
+  has_many :procedures, through: :visits
 end

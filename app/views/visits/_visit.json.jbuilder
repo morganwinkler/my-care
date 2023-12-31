@@ -7,3 +7,4 @@ json.user_id visit.user_id
 json.doctors visit.doctors
 json.nurses visit.nurses
 json.medications visit.medications
+json.procedures visit.procedures
