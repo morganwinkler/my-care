@@ -29,7 +29,12 @@
 #   { name: "Aspirin", reason: "prevention", visit_id: 1 },
 # ])
 
-Procedure.create!([
-  { name: "xray", date: Date.new(2023, 12, 01), reason: "to see if leg is broken", result: "its def broken", visit_id: 1, note: "ouch" },
-  { name: "endoscopy", date: Date.new(2023, 8, 16), reason: "check for ulcers", result: "minor ulcer", visit_id: 2, note: "hated it" },
+# Procedure.create!([
+#   { name: "xray", date: Date.new(2023, 12, 01), reason: "to see if leg is broken", result: "its def broken", visit_id: 1, note: "ouch" },
+#   { name: "endoscopy", date: Date.new(2023, 8, 16), reason: "check for ulcers", result: "minor ulcer", visit_id: 2, note: "hated it" },
+# ])
+
+Question.create!([
+  { question: "what will recovery time be", note: "ask surgeon and ortho", active: true, visit_id: 1 },
+  { question: "what meds will I need", note: "ask gastro", active: true, visit_id: 2 },
 ])
