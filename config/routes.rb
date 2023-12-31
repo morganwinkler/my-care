@@ -37,4 +37,11 @@ Rails.application.routes.draw do
   post "/procedures" => "procedures#create"
   patch "/procedures/:id" => "procedures#update"
   delete "/procedures/:id" => "procedures#destroy"
+
+  #question routes
+  get "/questions" => "questions#index"
+  get "/questions/:id" => "questions#show"
+  post "/questions" => "questions#create"
+  patch "/questions/:id" => "questions#update"
+  delete "/questions/:id" => "questions#destroy"
 end

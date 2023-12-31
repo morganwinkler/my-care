@@ -4,4 +4,5 @@ class Visit < ApplicationRecord
   has_many :nurses
   has_many :medications
   has_many :procedures
+  has_many :questions
 end
