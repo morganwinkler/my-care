@@ -18,7 +18,13 @@
 #   { name: "Lisa Bob", specialty: "Gastro", visit_id: 2, note: "blah blah" },
 # ])
 
-Nurse.create!([
-  { name: "Blake", date: Date.new(2023, 12, 01), time: "am", visit_id: 1, note: "very attentive" },
-  { name: "Britt", date: Date.new(2023, 12, 01), time: "pm", visit_id: 1, note: "sweet" },
+# Nurse.create!([
+#   { name: "Blake", date: Date.new(2023, 12, 01), time: "am", visit_id: 1, note: "very attentive" },
+#   { name: "Britt", date: Date.new(2023, 12, 01), time: "pm", visit_id: 1, note: "sweet" },
+# ])
+
+Medication.create!([
+  { name: "Tylenol", reason: "pain", visit_id: 1, note: "need stronger dose" },
+  { name: "Atenolol", reason: "blood pressure", visit_id: 1 },
+  { name: "Aspirin", reason: "prevention", visit_id: 1 },
 ])
