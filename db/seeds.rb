@@ -10,10 +10,15 @@
 #   { start_date: Date.new(2023, 8, 15), hospital: "Morton Plant", reason: "heartburn", user_id: 1 },
 # ])
 
-Doctor.create!([
-  { name: "Rob Smith", specialty: "Orthopedic", visit_id: 1, note: "blah blah" },
-  { name: "Karen Hodge", specialty: "Surgeon", visit_id: 1, note: "blah blah" },
-  { name: "Lisa Smith", specialty: "General", visit_id: 1, note: "blah blah" },
-  { name: "Bob Bob", specialty: "Cardio", visit_id: 2, note: "blah blah" },
-  { name: "Lisa Bob", specialty: "Gastro", visit_id: 2, note: "blah blah" },
+# Doctor.create!([
+#   { name: "Rob Smith", specialty: "Orthopedic", visit_id: 1, note: "blah blah" },
+#   { name: "Karen Hodge", specialty: "Surgeon", visit_id: 1, note: "blah blah" },
+#   { name: "Lisa Smith", specialty: "General", visit_id: 1, note: "blah blah" },
+#   { name: "Bob Bob", specialty: "Cardio", visit_id: 2, note: "blah blah" },
+#   { name: "Lisa Bob", specialty: "Gastro", visit_id: 2, note: "blah blah" },
+# ])
+
+Nurse.create!([
+  { name: "Blake", date: Date.new(2023, 12, 01), time: "am", visit_id: 1, note: "very attentive" },
+  { name: "Britt", date: Date.new(2023, 12, 01), time: "pm", visit_id: 1, note: "sweet" },
 ])
