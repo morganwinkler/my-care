@@ -32,20 +32,14 @@ class ProceduresController < ApplicationController
     end
   end
 
+  #only want user to  be able to update answer/note
+  def procedure_params
+    params.permit(:result, :note)
+  end
+
   def update
     @procedure = Procedure.find_by(id: params[:id])
-    if params[:date]
-      date = Date.parse(params[:date], "%Y/%m/%d")
-    end
-    @procedure.update(
-
-      name: params[:name] || @procedure.name,
-      reason: params[:reason] || @procedure.reason,
-      result: params[:result] || @procedure.result,
-      date: date || @procedure.date,
-      note: params[:note] || @procedure.note,
-      visit_id: @procedure.visit_id,
-    )
+    @procedure.update(procedure_params)
     if @procedure.valid?
       render :show
     else

@@ -29,16 +29,14 @@ class QuestionsController < ApplicationController
     end
   end
 
+  #only want user to  be able to update answer/note
+  def question_params
+    params.permit(:answer, :note)
+  end
+
   def update
     @question = Question.find_by(id: params[:id])
-    @question.update(
-
-      question: params[:question] || @question.question,
-      answer: params[:answer] || @question.answer,
-      note: params[:note] || @question.note,
-      active: params[:active] || @question.active,
-      visit_id: @question.visit_id,
-    )
+    @question.update(question_params)
     if @question.valid?
       render :show
     else
