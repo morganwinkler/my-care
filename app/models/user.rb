@@ -3,6 +3,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
 
   has_many :visits
+  has_many :articles
   has_many :doctors, through: :visits
   has_many :nurses, through: :visits
   has_many :medications, through: :visits

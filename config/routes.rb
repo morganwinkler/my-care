@@ -44,4 +44,11 @@ Rails.application.routes.draw do
   post "/questions" => "questions#create"
   patch "/questions/:id" => "questions#update"
   delete "/questions/:id" => "questions#destroy"
+
+  #article routes
+  get "/articles" => "articles#index"
+  get "/articles/:id" => "articles#show"
+  post "/articles" => "articles#create"
+  patch "/articles/:id" => "articles#update"
+  delete "/articles/:id" => "articles#destroy"
 end
