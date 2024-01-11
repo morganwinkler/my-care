@@ -13,7 +13,7 @@ class VisitsController < ApplicationController
 
   def create
     start_date = Date.parse(params[:start_date], "%Y/%m/%d")
-    end_date = Date.parse(params[:end_date], "%Y/%m/%d")
+    end_date = params[:end_date].present? ? Date.parse(params[:end_date], "%Y-%m-%d") : nil
 
     @visit = Visit.new({
       start_date: start_date,
